@@ -9,6 +9,8 @@
     nixosModules.x86_64-linux = {
       authorized-keys = import ./modules/authorized-keys.nix;
       essentials = import ./modules/essentials.nix;
+      extra = import ./modules/extra.nix;
+      fonts = import ./modules/fonts.nix;
       location = import ./modules/location.nix;
       networking = import ./modules/networking.nix;
       nix = import ./modules/nix.nix;
