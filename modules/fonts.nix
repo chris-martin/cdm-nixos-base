@@ -3,7 +3,7 @@
   fonts = {
     fontDir.enable = true;
     enableGhostscriptFonts = true;
-    fonts = [
+    packages = [
       pkgs.corefonts
       pkgs.fira-mono
     ];
@@ -28,7 +28,7 @@
     pkgs.profont
     pkgs.source-sans-pro
     pkgs.source-serif-pro
-    pkgs.symbola
+    # pkgs.symbola
     pkgs.ubuntu_font_family
     pkgs.unifont
     pkgs.vistafonts
