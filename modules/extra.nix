@@ -5,9 +5,9 @@
     # Graphical
 
     pkgs.baobab # disk usage analyzer
-    pkgs.gnome3.eog # image viewer
+    pkgs.eog # image viewer
     pkgs.evince # PDF viewer
-    pkgs.gnome3.file-roller # file compression
+    pkgs.file-roller # file compression
 
     # Command-line
 
