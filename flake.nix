@@ -2,8 +2,7 @@
   description = "NixOS modules for Chris's machines";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-24.11";
-    home-manager.url = "github:nix-community/home-manager/release-24.11";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.11";
     editor-cdm.url = "github:chris-martin/editor-cdm";
   };
 
@@ -13,19 +12,6 @@
       essentials = import ./modules/essentials.nix;
       extra = import ./modules/extra.nix;
       fonts = import ./modules/fonts.nix;
-      home = {
-        imports = [
-          inputs.home-manager.nixosModule
-          {
-            home-manager.users.chris.imports = [
-              (import ./modules/home {
-                pkgs = nixpkgs.legacyPackages.x86_64-linux;
-                editor = "${inputs.editor-cdm.packages.x86_64-linux.editor-cdm}/bin/editor-cdm";
-              })
-            ];
-          }
-        ];
-      };
       location = import ./modules/location.nix;
       networking = import ./modules/networking.nix;
       nix = import ./modules/nix.nix;
