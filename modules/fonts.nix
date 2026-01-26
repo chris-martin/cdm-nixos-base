@@ -29,8 +29,8 @@
     pkgs.source-sans-pro
     pkgs.source-serif-pro
     # pkgs.symbola
-    pkgs.ubuntu_font_family
+    pkgs.ubuntu-classic
     pkgs.unifont
-    pkgs.vistafonts
+    pkgs.vista-fonts
   ];
 }
