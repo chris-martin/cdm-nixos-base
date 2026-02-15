@@ -17,10 +17,6 @@
     pkgs.lato
     pkgs.merriweather
     pkgs.monoid
-    (pkgs.google-fonts.override { fonts = [ "BioRhyme" ]; })
-    (pkgs.google-fonts.override { fonts = [ "Bitter" ]; })
-    (pkgs.google-fonts.override { fonts = [ "Overlock SC" ]; })
-    (pkgs.google-fonts.override { fonts = [ "Redacted Script" ]; })
     pkgs.hasklig
     pkgs.helvetica-neue-lt-std
     pkgs.inconsolata
@@ -28,7 +24,6 @@
     pkgs.profont
     pkgs.source-sans-pro
     pkgs.source-serif-pro
-    # pkgs.symbola
     pkgs.ubuntu-classic
     pkgs.unifont
     pkgs.vista-fonts
