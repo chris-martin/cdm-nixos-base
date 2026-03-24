@@ -23,7 +23,7 @@
     pkgs.htop # view list of running processes
     pkgs.lsof # list open files
     pkgs.niv # nix version manager
-    (pass.withExtensions (exts: [ exts.pass-otp ])) # password manager
+    (pkgs.pass.withExtensions (exts: [ exts.pass-otp ])) # password manager
     pkgs.psmisc # contains killall
     pkgs.rsync # move files locally or via network
     pkgs.silver-searcher # file searching, the "ag" command
