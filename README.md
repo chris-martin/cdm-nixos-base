@@ -1,1 +1,1 @@
-# cdm-nixos-base
+Moved to https://codeberg.org/chris-martin/renzo
